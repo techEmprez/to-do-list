@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.main-div {
+    box-shadow: 1px 6px 17px -1px rgba(34, 60, 80, 0.19);
+    width: 40vw;
+    font-family: Poppins, serif;
+    font-size: 18px;
+    background-color: #fff;
+}
