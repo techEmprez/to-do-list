@@ -11,7 +11,7 @@ class Template {
   }
 }
 
-const array = [];
+let array = [];
 const sendToLocalStorage = () => {
   localStorage.setItem('list', JSON.stringify(array));
 };
@@ -147,5 +147,21 @@ dataEntry.addEventListener('keypress', (e) => {
     }
     dataEntry.value = null;
     sendToLocalStorage();
+  }
+});
+
+// Window Load event
+window.addEventListener('load', () => {
+  const getFromLocalStorage = JSON.parse(localStorage.getItem('list'));
+  for (let i = 0; i < getFromLocalStorage.length; i += 1) {
+    createList();
+    const listText = document.querySelectorAll('.listContent');
+    listText[i].textContent = getFromLocalStorage[i].description;
+    if (getFromLocalStorage[i].completed === true) {
+      getFromLocalStorage[i].completed = false;
+    }
+    localStorage.setItem('list', JSON.stringify(getFromLocalStorage));
+
+    array = getFromLocalStorage;
   }
 });
