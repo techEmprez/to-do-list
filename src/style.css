@@ -1,43 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 form {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
-  background-color: #f6f6f6;
+    background-color: #f6f6f6;
 }
 
 .main-div {
-  box-shadow: 1px 6px 17px -1px rgba(34, 60, 80, 0.19);
-  width: 40vw;
-  font-family: Poppins, serif;
-  font-size: 18px;
-  background-color: #fff;
+    box-shadow: 1px 6px 17px -1px rgba(34, 60, 80, 0.19);
+    width: 40vw;
+    font-family: Poppins, serif;
+    font-size: 18px;
+    background-color: #fff;
 }
 
 section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .input-div {
-  padding: 15px;
-  border-bottom: 1px solid #d0d0d0;
-  display: flex;
-  align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #d0d0d0;
+    display: flex;
+    align-items: center;
 }
 
 input {
-  border: none;
-  padding: 15px;
-  font-style: oblique;
-  font-size: 18px;
-  border-bottom: 1px solid #d0d0d0;
+    border: none;
+    padding: 15px;
+    font-style: oblique;
+    font-size: 18px;
+    border-bottom: 1px solid #d0d0d0;
 }
 
 p {
@@ -73,4 +73,16 @@ i {
 .listContent-disable {
     text-decoration: line-through;
     opacity: 0.6;
+}
+
+.remove-icon-active {
+    display: none;
+}
+
+.icon2 {
+    display: none;
+}
+
+.changeBg {
+    background-color: #abcea1;
 }
