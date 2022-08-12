@@ -11,7 +11,6 @@ Where the the user can add his daily to do here and when list item is completed 
 ## Technologies Used
 
 - Git
-- Linters
 - Github
 - Webpack
 
