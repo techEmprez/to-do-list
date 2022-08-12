@@ -16,3 +16,26 @@ body {
     font-size: 18px;
     background-color: #fff;
 }
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-div {
+    padding: 15px;
+    border-bottom: 1px solid #d0d0d0;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    padding: 15px;
+    font-style: oblique;
+    font-size: 18px;
+    border-bottom: 1px solid #d0d0d0;
+}
