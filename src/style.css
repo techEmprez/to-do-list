@@ -39,3 +39,38 @@ input {
   font-size: 18px;
   border-bottom: 1px solid #d0d0d0;
 }
+
+p {
+    padding: 10px;
+}
+
+#clear {
+    text-align: center;
+    color: #abcea1;
+    margin: 0;
+    padding: 25px;
+}
+
+#clear:hover {
+    cursor: pointer;
+}
+
+i {
+    float: right;
+}
+
+#header {
+    font-weight: bold;
+    padding: 15px;
+}
+
+.listContent {
+    flex: 2;
+    border: none;
+    margin: 18px 0;
+}
+
+.listContent-disable {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
