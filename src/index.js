@@ -1,3 +1,6 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable no-continue */
+/* eslint-disable no-unused-vars */
 import './style.css';
 
 class Template {
@@ -8,7 +11,7 @@ class Template {
   }
 }
 
-let array = [];
+const array = [];
 const sendToLocalStorage = () => {
   localStorage.setItem('list', JSON.stringify(array));
 };
@@ -88,7 +91,7 @@ const createList = () => {
     form.removeChild(list);
     const getFromLocalStorage = JSON.parse(localStorage.getItem('list'));
     const result = getFromLocalStorage.filter(
-      (word) => word.description === listText.textContent,
+      (word) => word.description === listText.textContent
     );
     const empty = [];
     for (let i = 0; i < getFromLocalStorage.length; i += 1) {
@@ -112,7 +115,7 @@ const createList = () => {
       if (e.key === 'Enter' && editInput.value) {
         const getting = JSON.parse(localStorage.getItem('list'));
         const result = getting.filter(
-          (word) => word.description === listText.textContent,
+          (word) => word.description === listText.textContent
         );
         const empty = [];
         for (let i = 0; i < getting.length; i += 1) {
@@ -129,3 +132,20 @@ const createList = () => {
     });
   });
 };
+
+// Entering list event
+const dataEntry = document.querySelector('.dataEntry');
+dataEntry.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter' && dataEntry.value) {
+    const object = new Template(dataEntry.value, false, array.length);
+    array.push(object);
+    e.preventDefault();
+    createList();
+    const listText = document.querySelectorAll('.listContent');
+    for (let i = 0; i < array.length; i += 1) {
+      listText[i].textContent = array[i].description;
+    }
+    dataEntry.value = null;
+    sendToLocalStorage();
+  }
+});
