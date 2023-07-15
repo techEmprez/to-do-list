@@ -1,6 +1,7 @@
 # To-Do-List
 
-Where the the user can add his daily to do here and when list item is completed he/she can remove it from the list or even edit it if he made a mistake. And also remove all of them in one try.
+This App is a user-friendly productivity tool designed for users' daily tasks and to stay organized. Built with React and Framer Motion library for animations, the app provides a seamless and interactive user experience. With the Task App, users can easily create and prioritize their to-do lists. The app's intuitive interface allows users to add new tasks quickly and efficiently.
+Basically, a user can add his daily to do here and when the list item is completed he/she can remove it from the list or even edit it if he made a mistake. And also remove all of them in one try.
 
 ## Built With
 
